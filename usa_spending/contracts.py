@@ -11,8 +11,8 @@ from readable_keywords import competition_args
 class Contracts(GovernmentAPI):
     """Python wrapper for USA Spending's Federal Contracts API."""
 
-    def __init__(self):
-        super(Contracts, self).__init__()
+    def __init__(self, *args, **kwds):
+        super(Contracts, self).__init__(*args, **kwds)
         self._competition_args = competition_args
         self._re_competition = re.compile('extent_comp.+|compet.+')
 

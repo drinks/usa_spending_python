@@ -10,8 +10,8 @@ from government_api import GovernmentAPI
 class Subawards(GovernmentAPI):
     """Python wrapper for the USA Spending Federal Assistance API."""
 
-    def __init__(self):
-        super(Subawards, self).__init__()
+    def __init__(self, *args, **kwds):
+        super(Subawards, self).__init__(*args, **kwds)
 
     def search(self, detail='b', **kwds):
         """Search the USA Spending Federal Contracts API."""

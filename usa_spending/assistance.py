@@ -24,8 +24,8 @@ state_codes = {
 class Assistance(GovernmentAPI):
     """Python wrapper for the USA Spending Federal Assistance API."""
 
-    def __init__(self):
-        super(Assistance, self).__init__()
+    def __init__(self, *args, **kwds):
+        super(Assistance, self).__init__(*args, **kwds)
         self.state_codes = state_codes
         self._category_args = category_args
 

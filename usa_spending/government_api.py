@@ -14,8 +14,8 @@ class GovernmentAPI(API):
     replacement and connecting with the API.
     """
 
-    def __init__(self):
-        super(GovernmentAPI, self).__init__()
+    def __init__(self, *args, **kwds):
+        super(GovernmentAPI, self).__init__(*args, **kwds)
         self.base_url = 'http://usaspending.gov'
         self.output_format = 'xml'
         self.required_params = None
